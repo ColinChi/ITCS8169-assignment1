@@ -1,0 +1,38 @@
+{
+  "run_name": "e1_scene_cnn_rgb_seed0",
+  "data": {
+    "train_dir": "data/train",
+    "test_dir": "data/test",
+    "split_file": "splits/seed0_val20.json",
+    "image_size": 128,
+    "input_mode": "rgb",
+    "transform_profile": "standard",
+    "augment": true,
+    "batch_size": 64,
+    "num_workers": 2
+  },
+  "model": {
+    "name": "scene_cnn",
+    "pretrained": false,
+    "dropout": 0.30
+  },
+  "optimizer": {
+    "name": "adamw",
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "scheduler": {
+    "name": "cosine",
+    "min_lr": 0.000001
+  },
+  "training": {
+    "seed": 0,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "label_smoothing": 0.1,
+    "grad_clip_norm": 5.0,
+    "amp": true,
+    "deterministic": false
+  }
+}
+
