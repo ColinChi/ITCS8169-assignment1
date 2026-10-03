@@ -1,0 +1,36 @@
+{
+  "run_name": "e0_tnet_seed0",
+  "data": {
+    "train_dir": "data/train",
+    "test_dir": "data/test",
+    "split_file": "splits/seed0_val20.json",
+    "image_size": 64,
+    "input_mode": "gray1",
+    "transform_profile": "starter",
+    "augment": false,
+    "batch_size": 64,
+    "num_workers": 2
+  },
+  "model": {
+    "name": "tnet",
+    "pretrained": false
+  },
+  "optimizer": {
+    "name": "adam",
+    "lr": 0.002,
+    "weight_decay": 0.0
+  },
+  "scheduler": {
+    "name": "none"
+  },
+  "training": {
+    "seed": 0,
+    "epochs": 20,
+    "early_stopping_patience": 20,
+    "label_smoothing": 0.0,
+    "grad_clip_norm": null,
+    "amp": true,
+    "deterministic": false
+  }
+}
+

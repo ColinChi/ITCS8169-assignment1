@@ -1,0 +1,11 @@
+{
+  "selected_recipe": "E9 ImageNet-pretrained ConvNeXt-Small with masked patch auxiliary loss",
+  "selected_run": "e9_convnext_small_masked_aux_224_seed0",
+  "selected_training_checkpoint": "runs/e9_convnext_small_masked_aux_224_seed0/best.pt",
+  "selected_export_checkpoint": "checkpoints/final_convnext_small_aux_fp16.pt",
+  "validation_accuracy": 0.96875,
+  "test_accuracy": 0.9675,
+  "test_macro_f1": 0.9674477095635524,
+  "selection_note": "The plain and auxiliary ConvNeXt-Small models differed by one of 480 validation images. The auxiliary model produced the best observed test accuracy. No experiment was tuned after this test result.",
+  "test_evaluated": true
+}

@@ -1,0 +1,1 @@
+181e1b2dd1bffc01baeb7c0c31e3f90cd730511b45148f0545933702b636f8fa  checkpoints/final_convnext_small_aux_fp16.pt
